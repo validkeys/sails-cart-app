@@ -1,0 +1,16 @@
+<h3>Products</h3>
+{{#link-to "products.new"}}New Product{{/link-to}}
+<ul>
+  {{#each product in arrangedContent}}
+  <li>
+    <h4>{{product.title}}</h4>
+    <p>{{product.description}}</p>
+    <div>
+      <small>Price: ${{product.price}}</small>
+      <small>In-Stock ({{product.quanityOnHand}})</small>
+    </div>
+  </li>
+  {{else}}
+  <li>No Products In Store</li>
+  {{/each}}
+</ul>
