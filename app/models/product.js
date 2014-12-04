@@ -6,7 +6,7 @@ export default DS.Model.extend({
   title: DS.attr('string'),
   description: DS.attr('string'),
   category: DS.attr('string'),
-  price: DS.attr('float'),
-  quantityOnHand: DS.attr('integer')
+  price: DS.attr('number'),
+  quantityOnHand: DS.attr('number')
 
 });
